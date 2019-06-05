@@ -188,3 +188,12 @@ PRODUCT_COPY_FILES += \
 # USB Accesory
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
+
+# Advanced Display
+PRODUCT_PACKAGES += \
+    AdvancedDisplay
+
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service.samsung-sdm \
+    vendor.lineage.livedisplay@2.0-service-sysfs
