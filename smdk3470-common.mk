@@ -83,18 +83,21 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0 \
+    android.hardware.wifi@1.1 \
     android.hardware.wifi@1.0-impl \
     android.hardware.wifi@1.0-service \
+    android.hardware.wifi.supplicant@1.1 \
+    wificond \
     libwpa_client \
     hostapd \
-    wificond \
+    dhcpcd.conf \
     wifilogd \
     wpa_supplicant \
-    wifiloader
+    wpa_supplicant.conf \
+    wifiloader \
+    macloader \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf
 
